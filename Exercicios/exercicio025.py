@@ -1,0 +1,5 @@
+nome = str(input('Qual seu nome?')).strip()
+# separa = nome.split()
+# print(separa[1].upper() == 'SILVA')
+# print(f'Seu nome tem Silva? {'silva' in nome.lower}')
+print('Seu nome tem Silva? {}'.format('silva' in nome.lower()))

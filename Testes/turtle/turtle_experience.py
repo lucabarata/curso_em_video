@@ -1,0 +1,16 @@
+import turtle
+t = turtle.Turtle()
+t.color("red")
+t.pensize(1)
+s = turtle.Shape("compound")
+poly1 = ((0, 0), (10, -5), (0, 10), (-10, -5))
+s.addcomponent(poly1, "red", "blue")
+poly2 = ((0, 0), (10, -5), (-10, -5))
+s.addcomponent(poly2, "blue", "red")
+turtle.register_shape("myshape", s)
+turtle.shape("myshape")
+t.shape("myshape")
+for c in range(100):
+    t.forward(100)
+    t.left(90)
+    t.forward(100)

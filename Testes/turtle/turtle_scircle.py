@@ -1,0 +1,16 @@
+import turtle
+from time import sleep
+turtle.circle(50, 360, 60)
+turtle.position()
+turtle.setpos(0, 50)
+turtle.dot(10)
+turtle.setpos(0,100)
+turtle.sety(50)
+turtle.setx(50)
+turtle.setx(-50)
+turtle.setx(0)
+turtle.color("blue")
+astamp = turtle.stamp()
+turtle.fd(50)
+turtle.clearstamp(astamp)
+sleep(5)
